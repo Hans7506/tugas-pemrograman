@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 body {
+    font-family:'Poppins', sans-serif;
     background: #f4f4f4;
     color: #333;
 }
@@ -24,42 +25,63 @@ header {
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#003b03;
+    position:sticky;
+    top:0;
 }
 
-nav ul li {
-    margin-left: 20px;
+nav .logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:bold;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
 }
 
-.hero {
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200') center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+nav ul li a:hover{
+    color:#f4b400;
 }
 
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
+.hero{
+    height:100vh;
+    background:url('https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-sophisticated-bar-and-restaurant-boasting-luxurious-modern-design-featuring-elegant-furnishings-image_3720689.jpg') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero button{
+    padding:12px 30px;
+    border:none;
+    background:#f4b400;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.05);
 }
 
 .btn {
@@ -91,13 +113,16 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
-.card {
-    background: white;
-    padding: 25px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
+.card{
+    background:white;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
 }
 
 form {
