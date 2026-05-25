@@ -1,2 +1,2 @@
 # tugas-pemrograman
-Kelompok : M Farhan Dwi Putra, Rafli Putra Rinaldi
+Kelompok : M Farhan Dwi Putra, Rafli Putra Rinaldi, Eka Satrio
